@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+HTML, body, main{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+       display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#field{
+ border: 10px solid white;
+    width: 70%;
+    height: 40%;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+HTML, body, main{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+
+}
+
+#container{
+     width: 100%;
+  height: 100vh; /* usar toda a altura da viewport */
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* empurra um pra cima e outro pra baixo */
+  align-items: center;
+}
+
+#field{
+ border: 10px solid white;
+    width: 70%;
+    height: 40%;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+HTML, body, main{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+       display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+/* ---------- FIELD ---------- */
+#field {
+   position: relative;
+  width: 70%;
+  height: 40%;
+  margin: 100px auto;
+  margin-bottom: 1rem;
+  background-color: black;
+  border: 10px solid white;
+  overflow: hidden;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+
+/* ---------- ALMA ---------- */
+#soul{
+    position: absolute;
+    z-index: 3;                /* fica NA FRENTE das caixas */
+    width: 50px;
+    height: 50px;
+    background: url("./imgs/soul.png") no-repeat center/cover;
+    left: 0;   /* ponto inicial – mude como quiser */
+    top: 0;
+}
+
+/* ---------- CAIXAS ---------- */
+.choice{
+    position: absolute;        /* fixa no canto correspondente */
+    z-index: 1;               /* atrás da alma */
+    display: flex;
+    justify-content: center;
+     align-items: center;
+    text-align: center;
+    font-family: 'Press Start 2P', sans-serif;
+    width: 5vh;
+    height: 5vh;
+    padding: 6px 10px;
+    font-size: 4rem;
+    color: green;
+    border: 1px solid white;
+    pointer-events: none;      /* a alma passa por cima sem travar */
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.choice-group {
+  display: flex;
+  align-items: center;
+   gap: 20px;
+  position: relative;
+  margin-left: 1rem;
+}
+
+
+/* distâncias do retângulo branco */
+.top-left     { top: 20px;  left: 20px;  }
+.top-right    { top: 20px;  right: 20px; }
+.bottom-left  { bottom: 20px; left: 20px; }
+.bottom-right { bottom: 20px; right: 20px; }
+
+.choice.highlight {
+  border-color: yellow !important;
+  color: yellow;
+}
+
+.choice-text {
+  color: white;
+  font-family: 'Press Start 2P', sans-serif;
+  margin: 20%;
+  margin-left: 7rem;
+  font-size: 2rem;
+   z-index: 1;
+}
+
+
+#characters {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%; /* para centralizar conteúdo */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; /* espaço entre imagem e texto */
+}
+
+/* Ajustar tamanho da imagem para ficar maior */
+.mettaton-gif {
+  width: 30rem; /* maior que antes */
+  image-rendering: pixelated;
+}
+
+/* Texto maior e centralizado */
+.pergunta-texto {
+  font-family: 'Press Start 2P', sans-serif;
+  color: white;
+  font-size: 2rem; /* maior */
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+
+.menu-button {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  font-family: 'Press Start 2P', cursive; /* se estiver usando fonte retrô */
+  font-size: 14px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.menu-button:hover {
+  background-color: white;
+  color: black;
+}
+
+#hp-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px auto;
+}
+
+.hp-label {
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+}
+
+#hp-box {
+  width: 3rem;
+  height: 2rem;
+  background-color: red;
+  position: relative;
+}
+
+#hp-fill {
+  background-color: yellow;
+  height: 100%;
+  width: 100%;
+
+}
+
+#hp-count {
+  color: white;
+    font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+}
+
+#action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.action-button {
+  background-color: black;
+  color: orange;
+  border: 2px solid white;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-family: 'Press Start 2P', cursive;
+  cursor: pointer;
+}
+
+.obstaculo {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background: white;
+}
+
+.obstaculo-grande {
+  position: absolute;
+  background: white;
+  z-index: 10;
+}
+
+.aviso-linha {
+  position: absolute;
+  background-color: rgba(255, 0, 0, 0.4);
+  z-index: 1000;
+  animation: avisoPiscar 1s linear infinite;
+}
+
+@keyframes avisoPiscar {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0; }
+}
