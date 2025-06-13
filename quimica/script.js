@@ -281,7 +281,7 @@ function iniciarObstaculosGrandes() {
   const ataqueVertical = setInterval(() => {
     criarObstaculoGrandeVertical("top");
     criarObstaculoGrandeVertical("bottom");
-  }, 1300);
+  }, 1400);
   intervalosDeAtaque.push(ataqueVertical);
 
   
@@ -290,7 +290,7 @@ function iniciarObstaculosGrandes() {
     const ataqueHorizontal = setInterval(() => {
       criarObstaculoGrandeHorizontal("left");
       criarObstaculoGrandeHorizontal("right");
-    }, 1300);
+    }, 1400);
     intervalosDeAtaque.push(ataqueHorizontal);
 
 
