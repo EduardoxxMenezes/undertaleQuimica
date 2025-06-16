@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+HTML, body, main{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+       display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+#field{
+ border: 10px solid white;
+    width: 70%;
+    height: 40%;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+HTML, body, main{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+
+}
+
+#container{
+     width: 100%;
+  height: 100vh; 
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  align-items: center;
+}
+
+#field{
+ border: 10px solid white;
+    width: 60%;
+    height: 60%;
+    margin-bottom: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+HTML, body, main{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: black;
+
+}
+
+#container{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+       display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+#field {
+   position: relative;
+  width: 60%;
+  height: 60%;
+  margin: 100px auto;
+  margin-bottom: 1rem;
+  background-color: black;
+  border: 10px solid white;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+#soul{
+    position: absolute;
+    z-index: 3;                
+    width: 30px;
+    height: 30px;
+    background: url("./imgs/soul.png") no-repeat center/cover;
+    left: 0;   
+    top: 0;
+}
+
+
+.choice{
+    position: absolute;      
+    z-index: 1;             
+    display: flex;
+    justify-content: center;
+     align-items: center;
+    text-align: center;
+    font-family: 'Press Start 2P', sans-serif;
+    width: 4vh;
+    height: 4vh;
+    padding: 6px 10px;
+    font-size: 2rem;
+    color: green;
+    border: 1px solid white;
+    pointer-events: none;      
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.choice-group {
+  display: flex;
+  align-items: center;
+   gap: 20px;
+  position: relative;
+  margin-left: 1rem;
+}
+
+
+
+.top-left     { top: 20px;  left: 20px;  }
+.top-right    { top: 20px;  right: 20px; }
+.bottom-left  { bottom: 20px; left: 20px; }
+.bottom-right { bottom: 20px; right: 20px; }
+
+.choice.highlight {
+  border-color: yellow !important;
+  color: yellow;
+}
+
+.choice-text {
+  color: white;
+  font-family: 'Press Start 2P', sans-serif;
+  margin: 20%;
+  margin-left: 7rem;
+  font-size: 1rem;
+   z-index: 1;
+}
+
+
+#characters {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px; 
+}
+
+
+.mettaton-gif {
+  width: 10rem; 
+  image-rendering: pixelated;
+}
+
+
+.pergunta-texto {
+  font-family: 'Press Start 2P', sans-serif;
+  color: white;
+  font-size: 1rem; 
+  max-width: 80%;
+  margin: 0 auto;
+}
+
+
+.menu-button {
+  background-color: black;
+  color: white;
+  border: 2px solid white;
+  font-family: 'Press Start 2P', cursive; 
+  font-size: 14px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.menu-button:hover {
+  background-color: white;
+  color: black;
+}
+
+#hp-bar-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px auto;
+}
+
+.hp-label {
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+}
+
+#hp-box {
+  width: 3rem;
+  height: 2rem;
+  background-color: red;
+  position: relative;
+}
+
+#hp-fill {
+  background-color: yellow;
+  height: 100%;
+  width: 100%;
+
+}
+
+#hp-count {
+  color: white;
+    font-family: 'Press Start 2P', cursive;
+  font-size: 1.5rem;
+}
+
+#action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.action-button {
+  background-color: black;
+  color: orange;
+  border: 2px solid white;
+  padding: 8px 12px;
+  font-size: 12px;
+  font-family: 'Press Start 2P', cursive;
+  cursor: pointer;
+}
+
+.obstaculo {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: white;
+}
+
+.obstaculo-grande {
+  position: absolute;
+  background: white;
+  z-index: 10;
+}
+
+.aviso-linha {
+  position: absolute;
+  background-color: rgba(255, 0, 0, 0.4);
+  z-index: 1000;
+  animation: avisoPiscar 1s linear infinite;
+}
+
+@keyframes avisoPiscar {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 0; }
+}
