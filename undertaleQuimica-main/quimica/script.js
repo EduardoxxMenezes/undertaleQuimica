@@ -442,7 +442,7 @@ function ataqueLinhaHorizontalAnimado() {
     setTimeout(() => {
       field.removeChild(linha);
     }, 1500);
-  }, 2000); 
+  }, 3000); 
 }
 function ataqueLinhaVerticalAnimado() {
   const posX = Math.random() * (field.clientWidth - 80);
@@ -501,7 +501,7 @@ function ataqueLinhaVerticalAnimado() {
     setTimeout(() => {
       field.removeChild(linha);
     }, 1500);
-  }, 2000);
+  }, 3000);
 }
 
 
