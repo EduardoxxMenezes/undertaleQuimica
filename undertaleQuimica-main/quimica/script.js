@@ -10,8 +10,8 @@ const music = document.getElementById("mettaton-music");
 const deathSound = document.getElementById("death-sound");
 const deathSong = document.getElementById("death-song");
 let canMove = true;
-let hp = 999;
-const maxHP = 999;
+let hp = 20;
+const maxHP = 20;
 let faseAtual = 1;
 let ataques = [];
 
